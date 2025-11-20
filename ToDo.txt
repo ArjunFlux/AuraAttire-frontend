@@ -1,0 +1,4 @@
+1 logout functionality
+2 opt verifecation
+3 payment methods 
+4 save details about buying details about the user and to shown at the autharize user only

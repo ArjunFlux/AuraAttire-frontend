@@ -1,0 +1,18 @@
+@import "tailwindcss";
+a.active hr{
+  display: block;
+}
+.Heading1{
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 35px;
+  font-display: swap;
+}
+.Heading2 {
+  font-family: "STIX Two Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal; 
+  font-display: swap;
+}
