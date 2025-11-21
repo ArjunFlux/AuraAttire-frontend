@@ -24,7 +24,7 @@ const onSubmit = async (e) => {
       promisePrice: promiseprice
     };
     try {
-      await axios.post("http://localhost:8080/address/save", formData);
+      await axios.post("https://auraattire-backend.onrender.com/address/save", formData);
       handlesuccess("Order placed successfully!");
       setTimeout(() => navigate("/collection"), 2000);
     } catch (err) {
