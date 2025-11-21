@@ -1,7 +1,6 @@
 const UserModel = require("../Models/user");
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken');
-const { handleError } = require("../../FrontEndDevelopment/src/pages/utli");
 const signup = async (req,res)=>{
     try{
         const {name ,email,password} = req.body;
