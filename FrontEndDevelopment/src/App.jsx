@@ -18,7 +18,6 @@ import BuyNowPage from './pages/BuyNowPage'
 import PaymentPage from './pages/PaymentPage'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import CheckAutehnication from '../../BackEndDevelopment/Middleware/CheckAuthentication'
 function App() {
   const location = useLocation();
   const noFooterPages = ['/login', '/SignIn', '/buynow',"/wishlist","/about","/contact"]
@@ -38,48 +37,32 @@ function App() {
           </>
         }/>
         <Route path='/product/:id' element={
-          <CheckAutehnication>
             <ProductPage/>
-          </CheckAutehnication>
         }/>
         <Route path='/collection/:id' element={
-          <CheckAutehnication>
             <ProductPage/>
-          </CheckAutehnication>
         }/>
         <Route path='/Bestproduct/:id' element={
-          <CheckAutehnication>
             <BestProductPage/>
-          </CheckAutehnication>
         }/>
         <Route path='/contact' element={<ContactPage/>}/>
         <Route path='/about' element={<AboutUsPage/>}/>
         <Route path='/payment' element={
-          <CheckAutehnication>
             <PaymentPage/>
-          </CheckAutehnication>
         }/>
         <Route path='/collection' element={
-          <CheckAutehnication>
             <Collection/>
-          </CheckAutehnication>
         }/>
         <Route path='/search' element={
-          <CheckAutehnication>
             <SearchFilter/>
-          </CheckAutehnication>
         }/>
         <Route path='/login' element={<LoginPage/>}/>
         <Route path='/SignIn' element={<SignInPage/>}/>
         <Route path='/wishlist' element={
-          <CheckAutehnication>
             <AddtoCart/>
-          </CheckAutehnication>
         }/>
         <Route path='/buynow' element={
-          <CheckAutehnication>
             <BuyNowPage/>
-          </CheckAutehnication>
         }/>
       </Routes>
       {showFooter && <FooterPage/>}
