@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8080;
 require('./Models/db');
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://auraattire.onrender.com',
   methods: ['GET', 'POST'],
   credentials: true
 }));
